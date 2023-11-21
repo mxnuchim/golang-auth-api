@@ -18,6 +18,7 @@ func main() {
 	api := router.Group("/api")
 	{
 	api.POST("/signup", controllers.SignUp)
+	api.POST("/login", controllers.Login)
 	}
 
 	router.GET("/", func(c *gin.Context){
